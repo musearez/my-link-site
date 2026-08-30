@@ -1,0 +1,54 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Button Styling */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin: 12px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+/* Internal Navigation Buttons */
+.nav-btn {
+  background-color: #4a5568;
+}
+
+.nav-btn:hover {
+  background-color: #2d3748;
+}
+
+/* External Link Buttons */
+.external-btn {
+  background-color: #3182ce;
+}
+
+.external-btn:hover {
+  background-color: #2b6cb0;
+}
+
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+}
