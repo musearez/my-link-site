@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Link Page</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      color: #333;
+      position: relative;
+    }
+
+    /* Fixed Background with Opacity */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://picsum.photos/800/1200'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.2; /* 20% opacity */
+      z-index: -1;
+    }
+
+    /* Mobile Container */
+    .container {
+      width: 100%;
+      max-width: 480px;
+      padding: 30px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Logo Styles */
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Page Title */
+    .page-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #1a1a1a;
+    }
+
+    /* Link List */
+    .links-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    /* Base Button Style */
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 14px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 12px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Custom Styles for Each Button */
+    .btn-1  { background-color: #FF5733; color: #ffffff; }
+    .btn-2  { background-color: #33FF57; color: #111111; }
+    .btn-3  { background-color: #3357FF; color: #ffffff; }
+    .btn-4  { background-color: #F39C12; color: #ffffff; }
+    .btn-5  { background-color: #8E44AD; color: #ffffff; }
+    .btn-6  { background-color: #1ABC9C; color: #ffffff; }
+    .btn-7  { background-color: #E91E63; color: #ffffff; }
+    .btn-8  { background-color: #34495E; color: #ffffff; }
+    .btn-9  { background-color: #00BCD4; color: #ffffff; }
+    .btn-10 { background-color: #2ECC71; color: #ffffff; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://picsum.photos/150" alt="Page Logo" class="logo">
+
+    <h1 class="page-title">My Mobile Links</h1>
+
+    <div class="links-list">
+      <a href="https://example.com/1" class="btn btn-1">Visit My Blog</a>
+      <a href="https://example.com/2" class="btn btn-2">Check Out My Store</a>
+      <a href="https://example.com/3" class="btn btn-3">Subscribe on YouTube</a>
+      <a href="https://example.com/4" class="btn btn-4">Follow on Instagram</a>
+      <a href="https://example.com/5" class="btn btn-5">Listen on Spotify</a>
+      <a href="https://example.com/6" class="btn btn-6">Read My Articles</a>
+      <a href="https://example.com/7" class="btn btn-7">Support on Patreon</a>
+      <a href="https://example.com/8" class="btn btn-8">Join Discord Community</a>
+      <a href="https://example.com/9" class="btn btn-9">View Portfolio</a>
+      <a href="https://example.com/10" class="btn btn-10">Contact Me</a>
+    </div>
+  </div>
+
+</body>
+</html>
